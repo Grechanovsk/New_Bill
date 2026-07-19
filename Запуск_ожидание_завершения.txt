@@ -1,0 +1,85 @@
+procedure TForm1.Button1Click(Sender: TObject);
+var
+Rlst: LongBool; //результат выполнения
+StartUpInfo: TStartUpInfo; //параметры будущего процесса
+ProcessInfo: TProcessInformation; //Отслеживание выполнения
+CurrDir:string; //текущая папка
+ArchiveDir:string; //папку куда складываем архивы
+AppToRun:string; //путь до winrar
+CommandLine:string; //строка параметров
+filename:string; //имя файла
+Error:integer; //номер ошибкок
+ExitCode: Cardinal; //код завершения
+begin
+//Определяем текущюю директорию.
+CurrDir:= ExtractFilePath(Application.ExeName);
+ 
+//Определяем путь к WinRAR.
+AppToRun:='C:\Program Files\WinRAR\rar.exe';
+ 
+//Проверяем, есть ли в текущей директории программы, папка Archive.
+//Если нет - создаем.
+If not DirectoryExists(CurrDir+'Archive') then
+MkDir(CurrDir+'Archive');
+ 
+//Открываем выбор файла для архивирования.
+//Если выбрали, то обрабатываем.
+if OpenDialog1.Execute then
+begin
+//В FileName записываем полный путь к выбранному файлу
+filename:=OpenDialog1.FileName;
+ 
+//В CommandLine записываем командную строку
+//В нашем случае командная строка должна выглядеть:
+//<пробел> a -ep "<путь до архива>" "<путь до файла>"
+CommandLine:=' a -ep "'+CurrDir+'Archive\'+ExtractFileName(filename)+'.rar" "'+filename+'"';
+ 
+//Заполнение нулями всего StartUpInfo.
+FillChar(StartUpInfo, SizeOf(TStartUpInfo), 0);
+//После этого выставляем в нем некоторые параметры.
+with StartUpInfo do
+begin
+//Содержит количество байтов, занимаемых структурой TStartUpInfo.
+//Обязательно для заполнения. Инициализируйте как SizeOf(TStartUpInfo).
+cb := SizeOf(TStartUpInfo);
+//Содержит набор флагов, позволяющих управлять созданием дочернего процесса.
+//Показываем окно, курсор - часики.
+dwFlags := STARTF_USESHOWWINDOW or STARTF_FORCEONFEEDBACK;
+//Определяет как должно выглядеть окно запущенного приложения.
+//Нормальное отображение
+wShowWindow := SW_SHOWNORMAL;
+end;
+ 
+//Сам запуск WinRAR с параметрами.
+//По сути, мы запускаем следующее:
+//WinRar.exe a -ep "<путь до архива>" "<путь до файла>"
+showmessage(AppToRun+CommandLine);
+Rlst:= CreateProcess(PChar(AppToRun), PChar(CommandLine),
+nil, nil, false, NORMAL_PRIORITY_CLASS,
+nil, nil, StartUpInfo, ProcessInfo);
+ 
+//Отслеживаем выполнение.
+//Если запуск успешен
+if Rlst then
+with ProcessInfo do
+begin
+//Ждем завершения инициализации.
+WaitForInputIdle(hProcess, INFINITE);
+//Ждем завершения процесса.
+WaitforSingleObject(ProcessInfo.hProcess, INFINITE);
+//Получаем код завершения.
+GetExitCodeProcess(ProcessInfo.hProcess, ExitCode);
+//Закрываем дескриптор процесса.
+CloseHandle(hThread);
+//Закрываем дескриптор потока.
+CloseHandle(hProcess);
+end
+//Иначе
+else
+begin
+//В случае ошибки - выводим на экран сообщение.
+Error := GetLastError;
+MessageDlg(SysErrorMessage(Error), mtError, [mbOk], 0);
+end;
+end;
+end;

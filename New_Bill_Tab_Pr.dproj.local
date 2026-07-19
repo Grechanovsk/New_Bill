@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.257,=D:\New_Bill_Tab\Bill_Svet.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.032,=D:\Projects_Delphi\New_Bill_Tab\Unit12.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.524,=D:\New_Bill_Tab\Unit11.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.323,D:\New_Bill_Tab\Unit11.pas=D:\New_Bill_Tab\Calendar.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.007,D:\New_Bill_Tab\Unit4.pas=D:\New_Bill_Tab\Bill_Pokz_Voda.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.798,=D:\New_Bill_Tab\Unit4.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.800,=D:\New_Bill_Tab\Bill2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.742,D:\New_Bill_Tab\Edit_Zam.dfm=D:\New_Bill_Tab\Unit9.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.323,D:\New_Bill_Tab\Unit11.dfm=D:\New_Bill_Tab\Calendar.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.640,=D:\New_Bill_Tab\Bill_Opl_Sveta.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.742,D:\New_Bill_Tab\Edit_Zam.pas=D:\New_Bill_Tab\Unit9.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.533,=D:\New_Bill_Tab\Unit10.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.300,=D:\New_Bill_Tab\DM.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.910,D:\New_Bill_Tab\DM.pas=</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.055,=D:\Projects_Delphi\New_Bill_Tab\ModelSupport_New_Bill_Tab_Pr\default.txvpck</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.676,C:\Users\al\Documents\Embarcadero\Studio\Projects\Project1.dproj=D:\New_Bill_Tab\New_Bill_Tab_Pr.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.641,=D:\New_Bill_Tab\Bill3.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.971,C:\Users\al\Documents\Embarcadero\Studio\Projects\Unit1.dfm=D:\New_Bill_Tab\New_Bill_Tab.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.248,D:\Projects_Delphi\New_Bill_Tab\Nstroyki.dfm=D:\Projects_Delphi\New_Bill_Tab\Unit12.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.139,D:\New_Bill_Tab\Bill_Login_Sel.dfm=D:\New_Bill_Tab\Unit10.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.331,=D:\New_Bill_Tab\Unit9.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.139,D:\New_Bill_Tab\Bill_Login_Sel.pas=D:\New_Bill_Tab\Unit10.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.971,C:\Users\al\Documents\Embarcadero\Studio\Projects\Unit1.pas=D:\New_Bill_Tab\New_Bill_Tab.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.530,=C:\Users\al\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.735,=D:\New_Bill_Tab\ModelSupport_New_Bill_Tab_Pr\default.txaPackage</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.556,=D:\New_Bill_Tab\Bill_Opl_Sheta.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.649,C:\Users\al\Documents\Embarcadero\Studio\Projects\Unit2.pas=D:\New_Bill_Tab\DM.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.169,=C:\Users\al\Documents\Embarcadero\Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.248,D:\Projects_Delphi\New_Bill_Tab\Nstroyki.pas=D:\Projects_Delphi\New_Bill_Tab\Unit12.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.007,D:\New_Bill_Tab\Unit4.dfm=D:\New_Bill_Tab\Bill_Pokz_Voda.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.649,C:\Users\al\Documents\Embarcadero\Studio\Projects\Unit2.dfm=D:\New_Bill_Tab\DM.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.688,=D:\New_Bill_Tab\Bill_Shet.pas</Transaction>
+  </Transactions>
+	<ProjectSortOrder AutoSort="0" SortType="0">
+    <File Path="ModelSupport_New_Bill_Tab_Pr"/>
+    <File Path="ModelSupport_New_Bill_Tab_Pr\default.txaPackage"/>
+    <File Path="ModelSupport_New_Bill_Tab_Pr\default.txvpck"/>
+    <File Path="Bill2.pas"/>
+    <File Path="Bill2.dfm"/>
+    <File Path="Bill3.pas"/>
+    <File Path="Bill3.dfm"/>
+    <File Path="Bill_Login_Sel.pas"/>
+    <File Path="Bill_Login_Sel.dfm"/>
+    <File Path="Bill_Opl_Sheta.pas"/>
+    <File Path="Bill_Opl_Sheta.dfm"/>
+    <File Path="Bill_Opl_Sveta.pas"/>
+    <File Path="Bill_Opl_Sveta.dfm"/>
+    <File Path="Bill_Pokz_Voda.pas"/>
+    <File Path="Bill_Pokz_Voda.dfm"/>
+    <File Path="Bill_Shet.pas"/>
+    <File Path="Bill_Shet.dfm"/>
+    <File Path="Bill_Svet.pas"/>
+    <File Path="Bill_Svet.dfm"/>
+    <File Path="Calendar.pas"/>
+    <File Path="Calendar.dfm"/>
+    <File Path="DM.pas"/>
+    <File Path="DM.dfm"/>
+    <File Path="Edit_Zam.pas"/>
+    <File Path="Edit_Zam.dfm"/>
+    <File Path="New_Bill_Tab.pas"/>
+    <File Path="New_Bill_Tab.dfm"/>
+    <File Path="Nstroyki.pas"/>
+    <File Path="Nstroyki.dfm"/>
+  </ProjectSortOrder>
+</BorlandProject>
